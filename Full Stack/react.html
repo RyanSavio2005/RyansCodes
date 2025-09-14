@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>PRO MERN STACK</title>
+        <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+        <div id="content"></div>
+        <script>
+            const ele=React.createElement('h1',null,'Hello World');
+            const para=React.createElement('p',null,'This is a paragraph');
+            const btn=React.createElement('button',null,'Click me');
+            const container = React.createElement('div', null, [ele, para, btn]);
+            ReactDOM.render(container, document.getElementById('content'));
+        </script>
+    </body>
+</html>

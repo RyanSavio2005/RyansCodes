@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Query</title>
+    </head>
+    <body>
+        <p class='text'>Paragraph 1</p>
+        <p class='text'>Paragraph 2</p>
+        <button onclick="changeSize()">Click The Button</button>
+        <script>
+            function changeSize(){
+                let e=document.querySelectorAll('.text');
+                for (let i=0;i<e.length;i++){
+                    e[i].style.fontSize="25px";
+                }
+            }
+        </script>
+    </body>
+</html>
